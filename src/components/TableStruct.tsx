@@ -61,13 +61,14 @@ function TimeSheet() {
 
 
     return (<React.Fragment>  
-       {/* <div >
-       <label>Select Week Start <Datepic/></label></div> */}
+       <div >
+       <label>Select Week Start <Datepic/></label></div>
            <br></br><br></br>
           
-
-      <table style={{width: '30%'}} className='table'>
-        <thead className="thead-light">
+    
+    
+      <table className='table'>
+        <thead className="thead-light" >
           <tr>
             <th>Application</th>
             <th>Activity</th>
@@ -98,7 +99,7 @@ function TimeSheet() {
               <option value={2}>app2</option>
               <option value={3}>app3</option>
               </select>
-              <Button onClick={addRow}  >+task</Button></th>
+              <Button onClick={addRow} variant="outlined" size="small">Add Row</Button></th>
               <th>
               <select name="activity" id="act">
               <option value={1}>activity1</option>
@@ -158,6 +159,7 @@ function TimeSheet() {
           </tr>
         </tbody>
         </table>
+   
         <br></br>
         <br></br>
         <label>Comments &nbsp;
