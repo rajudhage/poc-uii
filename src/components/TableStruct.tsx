@@ -99,7 +99,7 @@ function TimeSheet() {
               <option value={2}>app2</option>
               <option value={3}>app3</option>
               </select>
-              <Button onClick={addRow} variant="outlined" size="small">Add Row</Button></th>
+              </th>
               <th>
               <select name="activity" id="act">
               <option value={1}>activity1</option>
@@ -147,7 +147,7 @@ function TimeSheet() {
             
           <tr>
               <th>Total</th>
-              <td> </td>
+              <td><Button onClick={addRow} variant="outlined" size="small">Add Row</Button></td>
               <td>{Number(Day1) + Number(t1)}</td>
               <td>{Number(Day2) + Number(t2)}</td>
               <td>{Number(Day3) + Number(t3)}</td>
