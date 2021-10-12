@@ -62,7 +62,7 @@ function TimeSheet() {
 
     return (<React.Fragment>  
        <div >
-       <label>Select Week Start <Datepic/></label></div>
+       <label>Select Week Start<Datepic/></label></div>
            <br></br><br></br>
           
     
@@ -82,6 +82,7 @@ function TimeSheet() {
           </tr>
             <td>
             SelectApp
+            <Button onClick={addRow} variant="outlined" size="small">Add Row</Button>
             </td>
             <td>
             SelectActivity
@@ -147,7 +148,7 @@ function TimeSheet() {
             
           <tr>
               <th>Total</th>
-              <td><Button onClick={addRow} variant="outlined" size="small">Add Row</Button></td>
+              <td></td>
               <td>{Number(Day1) + Number(t1)}</td>
               <td>{Number(Day2) + Number(t2)}</td>
               <td>{Number(Day3) + Number(t3)}</td>
